@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
 
-/* Set custom variables here */
+:root {
+  --ff-ss: 'Merriweather Sans', sans-serif;
+  --ff-s: 'Merriweather', serif;
 
+  --body-bg: #F6F3ED;
+  --bs-primary:#2e483a;
+  --bs-primary-rgb:46, 72, 58;
+}
 
 .navbar-brand {
   color: #F6F3ED;
@@ -14,9 +20,25 @@ body {
 h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
-.button {
-  background-color: green;
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #2e483a;
+    --bs-btn-border-color: #2e483a;
+    --bs-btn-hover-color: #2e483a;
+    --bs-btn-hover-bg: #F6F3ED;
+    --bs-btn-hover-border-color: #2e483a;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2e483a;
+    --bs-btn-active-border-color: #2e483a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #2e483a;
+    --bs-btn-disabled-border-color: #2e483a;
+    
 }
+
 #hero {
   height: 800px;
   background-color: hsl(71, 18%, 88%);
@@ -35,14 +57,15 @@ h1, h2, h3 {
 
 
 #cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../cta-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color: #F6F3ED;
 }
 
 #cta .d-flex {
-  height: 400px;
+  height: 600px;
 }
 
 section:not(#hero):not(#cta){
