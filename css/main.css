@@ -3,7 +3,6 @@
 /* Set custom variables here */
 
 
-
 .navbar-brand {
   color: #F6F3ED;
 }
@@ -15,7 +14,9 @@ body {
 h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
-
+.button {
+  background-color: green;
+}
 #hero {
   height: 800px;
   background-color: hsl(71, 18%, 88%);
