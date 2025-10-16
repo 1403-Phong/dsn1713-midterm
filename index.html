@@ -127,10 +127,10 @@
       <section id="Customers" class="bg-primary">
         <div class="container">
           <div class="text-center">
-            <h2 class="text-light">What Our Customers Are Saying</h2>
+            <h2 class="text-light text-align-start p-4">What Our Customers Are Saying</h2>
 
             <div class="row g-4">
-              <div class="col-md-4">
+              <div class="col-md-4 p-2">
                 <figure>
                   <img  class="rounded-circle" src="./sarah.jpg" alt="Profile picture of Sarah" width="100" height="100">
                   <blockquote>
@@ -141,7 +141,7 @@
                   </figcaption>
                 </figure>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 p-2">
                 <figure>
                   <img class="rounded-circle" src="./tom.jpg" alt="Profile picture of Tom" width="100" height="100">
                   <blockquote>
@@ -152,7 +152,7 @@
                   </figcaption>
                 </figure>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 p-2">
                 <figure>
                   <img  class="rounded-circle" src="./julia.jpg" alt="Profile picture of Julia" width="100" height="100">
                   <blockquote>
@@ -171,11 +171,42 @@
       </section>
 
 
-      <section>
-        <div>
-          <div>
-            <h2>Questions? We Have Answers</h2>
-
+      <section id="Questions">
+        <div class="container">
+          <h2 class="text-center p-3">Questions? We Have Answers</h2>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="Questions?">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                   Can I pause or cancel my subscription?
+ </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Absolutely! You can pause, modify, or cancel your subscription at any time through your account dashboard.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+       How long do the meals last?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"> Our meals stay fresh in your fridge for up to 5 days. Each meal comes with a ‘best by’ date for optimal freshness.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+       Do you offer meals for specific diets?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Yes! We offer meals for a variety of diets, including vegetarian, keto, paleo, and gluten-free.</div>
+    </div>
+  </div>
+</div>
+</section>
             <!-- Include accordian component that best matches what is included in the provided screenshot.
 
             Text to include:
@@ -193,18 +224,14 @@
             Do you offer meals for specific diets?
 
             Yes! We offer meals for a variety of diets, including vegetarian, keto, paleo, and gluten-free. -->
-
-              
-          </div>
-        </div>
-      </section>
+      
 
 
       <section id="cta">
         <div class="container">
           <div class="d-flex justify-content-center  align-items-center">
             <div class="text-center">
-            <h2>Join Thousands of Time-Savers – Start Eating Better Today!</h2>
+            <h2 class="">Join Thousands of Time-Savers – Start Eating Better Today!</h2>
             
             <button class="btn btn-primary md-2">Sign Up and Get 30% Off Your First Week</button>
             </div>
@@ -216,17 +243,17 @@
 
 
     
-    <footer>
-      <div>
+    <footer id="footer" class="bg-primary">
+      <div class="container py-2">
         <div>
           <div>
             <a href="/">
-              <img src="images/daily-dish-logo.svg" alt="Logo" width="35" height="auto">
+              <img src="./daily-dish-logo.svg" alt="Logo" width="35" height="auto">
             </a>
-            <span>&copy; 2025 Company, Inc</span>
+            <span class="text-light">&copy; 2025 Company, Inc</span>
           </div>
       
-          <ul>
+          <ul class="text-align-end">
             <li><a href="#"><img src="images/instagram.svg" alt="Instagram logo" width="35" height="auto"></a></li>
             <li><a href="#"><img src="images/facebook.svg" alt="Facebook logo" width="35" height="auto"></a></li>
           </ul>
